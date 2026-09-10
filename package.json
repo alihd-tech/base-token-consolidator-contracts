@@ -1,0 +1,21 @@
+{
+  "name": "base-token-consolidator-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "hardhat clean",
+    "deploy:base-sepolia": "hardhat ignition deploy ignition/modules/TokenConsolidator.ts --network baseSepolia",
+    "deploy:base": "hardhat ignition deploy ignition/modules/TokenConsolidator.ts --network base"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "dotenv": "^17.2.2",
+    "hardhat": "^3.16.0",
+    "typescript": "^5.9.2",
+    "viem": "^2.37.6"
+  }
+}
